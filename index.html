@@ -1,141 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Website description">
-	<title> My Website </title>
-	<a href="https://www.example.com" target="_blank"></a>
-	<style>
-		* {
-			background-color: lightcyan;
-			text-color: white;
-
-		}
-		h1 {
-			color: darkgreen;
-			font-style: italic;
-			}
-
-		body {
-			font-family: 'Poppins' , sans-serif;
-			margin: 0;
-			padding:0;
-			line-height: 1.6;
-		}
-
-		ul {
-			list-style: none;
-			display: flex;
-			padding: 10px;
-			margin: 0;
-		}
-
-		p , li {
-			color: black;
-		}
-
-		button [type="Submit" value="Submit"] {
-			color: white;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 16px;
-			transition: background-color 0.3s ease;
-		}
-
-		button [type="Submit" value="Submit"]:hover {
-			background-color: #ffd700;
-		}
-		
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Website description">
+    <title>My Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: lightcyan;
+            color: black;
+            line-height: 1.6;
+        }
+        h1 {
+            color: darkgreen;
+            font-style: italic;
+            text-align: center;
+            padding: 10px;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: darkgreen;
+            padding: 10px;
+        }
+        ul li {
+            margin: 0 15px;
+        }
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 200px;
+            border-radius: 50%;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            margin: 5px;
+            padding: 10px;
+            width: 80%;
+        }
+        button {
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ffd700;
+        }
+    </style>
 </head>
-
-
 <body>
-	<h1>My Website</h1>
-	<ul>
-		<li><a href="#about me">About me</a></li>
-		<li><a href="#education background">Education Background</a></li>
-		<li><a href="#work experience">Work Experience</a></li>
-		<li><a href="#address">Address</a></li>
-		<li><a href="#contact">Contact Me</a></li>
+    <h1>My Website</h1>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Work Experience</a></li>
+        <li><a href="#address">Address</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-
-    <div class="about me" id="about me">
-    	<h1 >About Me</h1>
-    	<img src="https://t4.ftcdn.net/jpg/02/21/13/29/360_F_221132937_6X32xmuAeHgS7x6aYshPEnkuIrswoBQk.jpg">
-    	<p>
-    		<ul>
-    		<li>Name - Zin Zin Zaw Win</li>
-    		<li>Age - 19 </li>
-    		<li>Gender - Female</li>
-    		<li>Nationality - Myanmar</li>
-    	</ul>
-    	</p>
+    <div class="container">
+        <div class="section" id="about">
+            <h1>About Me</h1>
+            <img src="https://t4.ftcdn.net/jpg/02/21/13/29/360_F_221132937_6X32xmuAeHgS7x6aYshPEnkuIrswoBQk.jpg" alt="Profile Picture">
+            <ul>
+                <li>Name: Zin Zin Zaw Win</li>
+                <li>Age: 19</li>
+                <li>Gender: Female</li>
+                <li>Nationality: Myanmar</li>
+            </ul>
+        </div>
+        <div class="section" id="education">
+            <h1>Education Background</h1>
+            <ul>
+                <li>GED Graduate - Total Score 704 (April 2024)</li>
+                <li>SAT - 1200</li>
+                <li>IELTS - Band 7.5 (C1 Level)</li>
+            </ul>
+        </div>
+        <div class="section" id="experience">
+            <h1>Work Experience</h1>
+            <ul>
+                <li>Content Writer - T Education (Jan - Feb 2024)</li>
+                <li>Teacher - T Education (May 2024 - Feb 2025)</li>
+                <li>One-on-One Science Tutor - Genius Accent (June 2024 - Present)</li>
+                <li>Volunteer English Teacher - Double Blessing Center (May - Aug 2024)</li>
+                <li>Volunteer Science Teacher - Double Blessing Center (Feb - Mar 2025)</li>
+            </ul>
+        </div>
+        <div class="section" id="address">
+            <h1>Address</h1>
+            <p>Pyinmana, Nay Pyi Taw</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480971.8741311714!2d96.08074225870709!3d19.644700497924916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cf4d95d658d869%3A0xe31186445dc72d8d!2z4YCV4YC74YCJ4YC64YC44YCZ4YCU4YCs4YC44YCZ4YC84YCt4YCv4YC34YCU4YCa4YC6LCDhgJnhgLzhgJThgLrhgJnhgKw!5e0!3m2!1smy!2s!4v1738819010390!5m2!1smy!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="section" id="contact">
+            <h1>Contact Me</h1>
+            <ul>
+                <li>Email: zz324628@gmail.com</li>
+                <li>Phone: 09*********</li>
+                <li>Facebook: Zin Zin</li>
+            </ul>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required>
+                <label for="comment">Message</label>
+                <textarea name="comment" id="comment" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
     </div>
+</body>
+</html>
 
-    <div class="education background" id="education background">
-    	<h1>Education Background</h1>
-    	<p>
-    		<ul>
-    			<li> GED Graduate - Total score 704 (27.4.2024)</li>
-    	                <li>SAT -1200 </li>
-    			<li>IELTS - Band 7.5 (Equivalent to C1 Advanced Level)</li>
-    	</p>
-    </div>	
-
-    <div class="work experience" id="work experience">
-    <h1>Work Experience</h1>
-    <p><ul>
-    	<li>Content Writer - T Education for a month til 27.2.2024</li>
-    <li>Teacher - T Education (May 2024- February 2025)</li>
-    <li>One-on-One Science Tutor - Genius Accent (June 2024- now)</li>
-    <li>Volunteer English Teacher - Double Blessing Center (May 2024- August 2024)</li>
-    <li>Volunteer Science Teacher - Double Blessing Center (February 2025- March 2025)</li>
-    </ul>
-    </p>
-    </div>	
-
-    <div class="address" id="address"><meta charset="utf-8">
-    	<h1>Address</h1> 
-    	<p> Pyinmana, Nay Pyi Taw
-    		<div class="google-map" id="google-map">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d480971.8741311714!2d96.08074225870709!3d19.644700497924916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cf4d95d658d869%3A0xe31186445dc72d8d!2z4YCV4YC74YCJ4YC64YC44YCZ4YCU4YCs4YC44YCZ4YC84YCt4YCv4YC34YCU4YCa4YC6LCDhgJnhgLzhgJThgLrhgJnhgKw!5e0!3m2!1smy!2s!4v1738819010390!5m2!1smy!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-	
-		<div>Div test &copy; All rights reserved</div>
-	
-</body><br>
-
-<footer>
-		<div class="contact" id="contact"><meta charset="utf-8">
-			<h1>Contact Me!</h1>
-			<p>
-				<ul>
-					<li>Email - zz324628@gmail.com</li>
-					<li>Phone No. - 09*********</li>
-					<li>Facebook - Zin Zin </li>
-				</ul>
-			</p>
-		</div>
-
-	<form action="" method="post">
-		<label for="username">Username</label>
-		<input type="text" name="username" id="text" required><br>
-		<br>
-		<label for="email">Email Address</label>
-		<input type="text" name="email" id="text" required>
-		<br>
-		<br>
-		<label for="comment">Anything to tell me?</label>
-		<input type="text" name="comment" id="text" max="500" min="5" required>
-		<br>
-		<br>
-		<input type="button" value="Submit">
-		<button type="Reset"> Reset </button>
-	</form>
-
-</footer>
-
-</html>    
