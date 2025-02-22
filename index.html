@@ -4,10 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Website description">
-	<heading>
 	<title> My Website </title>
 	<a href="https://www.example.com" target="_blank"></a>
-</heading>
 	<style>
 		* {
 			background-color: lightcyan;
@@ -19,9 +17,38 @@
 			font-style: italic;
 			}
 
+		body {
+			font-family: 'Poppins' , sans-serif;
+			margin: 0;
+			padding:0;
+			line-height: 1.6;
+		}
+
+		ul {
+			list-style: none;
+			display: flex;
+			padding: 10px;
+			margin: 0;
+		}
+
 		p , li {
 			color: black;
 		}
+
+		button [type="Submit" value="Submit"] {
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+
+		button [type="Submit" value="Submit"]:hover {
+			background-color: #ffd700;
+		}
+		
 	</style>
 </head>
 
@@ -36,9 +63,9 @@
 		<li><a href="#contact">Contact Me</a></li>
     </ul>
 
-    <div class="about me" id="about me"><meta charset="utf-8">
+    <div class="about me" id="about me">
     	<h1 >About Me</h1>
-    	<img src="ID photo.jpg">
+    	<img src="https://t4.ftcdn.net/jpg/02/21/13/29/360_F_221132937_6X32xmuAeHgS7x6aYshPEnkuIrswoBQk.jpg">
     	<p>
     		<ul>
     		<li>Name - Zin Zin Zaw Win</li>
@@ -49,17 +76,17 @@
     	</p>
     </div>
 
-    <div class="education background" id="education background"><meta charset="utf-8">
+    <div class="education background" id="education background">
     	<h1>Education Background</h1>
     	<p>
     		<ul>
     			<li> GED Graduate - Total score 704 (27.4.2024)</li>
-    	<li>SAT -1200 </li>
-    	<li>IELTS - Band 7.5 (Equivalent to C1 Advanced Level)</li>
+    	                <li>SAT -1200 </li>
+    			<li>IELTS - Band 7.5 (Equivalent to C1 Advanced Level)</li>
     	</p>
-    	</div>	
+    </div>	
 
-    <div class="work experience" id="work experience"><meta charset="utf-8">
+    <div class="work experience" id="work experience">
     <h1>Work Experience</h1>
     <p><ul>
     	<li>Content Writer - T Education for a month til 27.2.2024</li>
@@ -105,8 +132,7 @@
 		<input type="text" name="comment" id="text" max="500" min="5" required>
 		<br>
 		<br>
-		<input type="button" value="Submit"/>
-		<imput type="Submit"/> 
+		<input type="button" value="Submit">
 		<button type="Reset"> Reset </button>
 	</form>
 
